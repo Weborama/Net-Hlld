@@ -17,6 +17,8 @@ use Net::Hlld::Exception::Action;
 
 use Moo;
 
+our $VERSION = '0.001';
+
 has 'socket' => (is => 'ro',
                  lazy => 1,
                  builder => '_build_socket');
