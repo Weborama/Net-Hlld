@@ -368,6 +368,9 @@ does nothing if a set with the same name already exists; you can
 however set the C<die_if_exists> parameter to have L<Net::Hlld> throw
 an exception instead.  Other options are specified by hlld.
 
+Note that sets that have been cleared and closed will be reopened by
+this command, assuming they were saved to disk.
+
 =head2 hll_list
 
   # get the list of sets, and some associated data
