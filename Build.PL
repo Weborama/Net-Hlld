@@ -10,6 +10,10 @@ my $build = Module::Build->new(
         'Module::Build' => '0.36_14',
     },
     test_requires => {
+        'File::Temp' => 0,
+        'Scalar::Util' => 0,
+        'Test::Deep' => 0,
+        'Test::Exception' => 0,
         'Test::More' => 0,
     },
     requires => {
@@ -21,6 +25,7 @@ my $build = Module::Build->new(
         'IO::Socket::INET' => 0,
         'Moo' => 0,
         'strict' => 0,
+        'Throwable::Error' => 0,
         'utf8' => 0,
         'warnings' => 0,
     },
